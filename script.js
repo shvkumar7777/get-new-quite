@@ -21,7 +21,7 @@ function LoadCompleted() {
 
 //get quotes from API using asynchronous function
 async function getQuotes(){
-    //loading();
+    loading();
     //build an api url
     const apiurl = "https://type.fit/api/quotes";
     //
@@ -34,7 +34,7 @@ async function getQuotes(){
     }
 }
     function singleQuote() {
-        //loading();
+        loading();
         if(quotes.length){
             //to get the one random quote
             let singlequote = quotes[Math.floor(Math.random()*quotes.length)]
@@ -51,7 +51,7 @@ async function getQuotes(){
             }
             //assigning it to the respective element in the HTML
             quoteText.textContent  = singlequote.text;
-            //LoadCompleted();        
+            LoadCompleted();        
         }
     }
 //To build the new quote URL
