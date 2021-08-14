@@ -9,7 +9,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+    <!-- quote contanier -->
+    <div class="quotebox" id="quotebox">
+        <!-- outer element of the quote -->
+        <div class="quotetext" id="quotetext">
+            <i class="fas fa-quote-left"></i>
+            <span class="quote" id="quote"></span>
+        </div>
+        <!-- Author of the quote -->
+        <div class="quoteautother">
+            <span class="author" id="author"></span>
+        </div>
+        <!-- Buttons -->
+        <div class="button-container">
+            <buttton class="twitter" id="twitter" title="Tweet this">
+                <i class="fab fa-twitter"> </i>
+            </buttton>
+            <button class="new-quote" id="new-quote">New Quote?</button>
+        </div>
+    </div>
+    <!-- loader class -->
+    <div class="loader" id="loader"></div>
     <script src="script.js"></script>
-    <div class="quote" id="quote">Dasoju Shiva Kumar</div>
 </body>
 </html>
